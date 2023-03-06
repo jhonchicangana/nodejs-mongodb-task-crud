@@ -1,0 +1,38 @@
+<!--<form action="/tasks/add" method="post">
+  <div>
+    <label for="title">Digita Title : </label>
+    <input type="text" name="title" placeholder="title" id="title" />
+  </div>
+  <div>
+    <label for="description">Digita descripcion : </label>
+    <textarea
+      name="description"
+      placeholder="Description"
+      id="description"
+    ></textarea>
+  </div>
+
+  <button>add</button>
+</form>
+
+<ul>
+  {{#each tasks}}
+  <li>
+    {{title}}
+    <p>{{description}}</p>
+    <button>Editar</button>
+    <button>Eliminar</button>
+  </li>
+  {{/each}}
+</ul>-->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-5">
+      {{>tasks/taskForm}}
+    </div>
+    <div class="col-md-7">
+      {{>tasks/taskTable}}
+    </div>
+  </div>
+</div>

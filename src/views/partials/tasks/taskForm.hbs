@@ -1,0 +1,17 @@
+<div class="card card-body p-4 routed-0 bg-dark text text-white">
+
+    <h3>Digite sus tareas</h3>
+    <form action="/tasks/add" method="post">
+        <div>
+            <label for="title">Digita Title : </label>
+            <input type="text" name="title" placeholder="title" id="title" class="form-control rounted-0 bg-dark text-white" />
+        </div>
+
+        <div>
+            <label for="description">Digita descripcion : </label>
+            <textarea name="description" placeholder="Description" id="description" class="form-control rounted-0 bg-dark text-white"></textarea>
+        </div>
+
+        <button class="btn btn-primary btn-sm mt-2">add</button>
+    </form>
+</div>
